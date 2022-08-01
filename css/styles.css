@@ -113,9 +113,7 @@ img{
 	margin-right: 0;
 }
 
-.link {
-	padding: 0px;
-}
+
 .footer {
 	background-color: #2F303A;
 	padding-bottom: 60px;
@@ -138,7 +136,16 @@ img{
 	cursor: pointer;
 }
 
-.header-contacts a {
+.header-contacts {
+	margin-left: auto;
+}
+
+.header-link {
+	display: flex;
+	flex-direction: row;
+	align-items:center;
+	justify-content: center;
+	gap:10px;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
@@ -148,14 +155,21 @@ img{
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-.header-contacts a:hover,
-.header-contacts a:focus {
+.header-link:hover,
+.header-link:focus {
 	color: var(--accent-color);
 	cursor: pointer;
 }
-.header-contacts {
-	margin-left: auto;
+.header-link:hover .header-icon,
+.header-link:focus .header-icon{
+	fill: var(--accent-color);
 }
+
+.header-icon {	
+	fill: #757575;
+	/*margin-right: 10px;*/
+}
+
 
 .footer-flex{
 	display: flex;
@@ -209,12 +223,6 @@ img{
 	color: #FFFFFF;
 	margin-bottom: 20px;
 }
-
-.header-icon {
-	fill: #757575;
-	margin-right: 10px;
-}
-
 
 /*-----------------MAIN STUDIO-----------------*/
 /*-----------------HERO-----------------*/
@@ -540,6 +548,7 @@ img{
 .portf-btn-type button:focus {
 		color: #ffffff;
 	background: var(--accent-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
